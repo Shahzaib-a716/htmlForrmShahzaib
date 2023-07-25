@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Form validation-Shahzaib Ali</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3 style="padding-top: 100px; padding-bottom: 20px;">HTML Form </h3>
+  
+  <form id="registrationForm">
+    
+    <input placeholder="Full Name..." type="text" id="fullName" name="fullName" required>
+    <span class="error" id="fullNameError"></span>
+    <br><br>
+
+    
+    <input placeholder="Email..." type="email" id="email" name="email" required>
+    <span class="error" id="emailError"></span>
+    <br><br>
+
+    <input placeholder="Password..." type="password" id="password" name="password" required>
+    <span class="error" id="passwordError"></span>
+    <br><br>
+
+   
+    <input placeholder="Confirm Password..." type="password" id="confirmPassword" name="confirmPassword" required>
+    <span class="error" id="confirmPasswordError"></span>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
